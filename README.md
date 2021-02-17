@@ -1,24 +1,5 @@
-# teige
+# Teige
 
-## Project setup
-```
-npm install
-```
+## Nettside for Teige Nes Bygg AS
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Lager nettside for Teige Nes Bygg AS i håp om å bytte mot timer til huset.
