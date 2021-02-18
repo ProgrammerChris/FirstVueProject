@@ -1,6 +1,8 @@
 <template>
+  <section class="content">
+    <router-view/>
+  </section>
   <Header/>
-  <router-view/>
   <Footer/>
 </template>
 
@@ -9,7 +11,6 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 
 export default {
-  name: 'App',
   components: {
     Header,
     Footer,
@@ -34,5 +35,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #C2BBB0;
+}
+.content {
+	display: grid;
+	grid-template-rows: 130px auto auto 90px;
+	justify-content: center;
 }
 </style>

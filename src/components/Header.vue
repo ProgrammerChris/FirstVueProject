@@ -7,8 +7,8 @@
     <nav id="nav">
       <ul>
         <li><router-link to="/">Hjem</router-link></li>
+        <li><router-link to="/omoss">Om oss</router-link></li>
         <li><router-link to="/prosjekter">Prosjekter</router-link></li>
-        <li><router-link to="/omoss">Om meg</router-link></li>
         <li><router-link to="/kontakt">Kontakt</router-link></li>
       </ul>
     </nav>
@@ -23,6 +23,9 @@ export default {
 
 <style>
 #header-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: grid;
   background-color: #250A00;
   grid-template-rows: 100px 30px;
