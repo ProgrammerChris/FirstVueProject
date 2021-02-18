@@ -1,7 +1,5 @@
 <template>
-    <div id="projects">
-        <h1>This is the projects page</h1>
-    </div>
+    <h1>This is the projects page</h1>
 </template>
 
 <style>

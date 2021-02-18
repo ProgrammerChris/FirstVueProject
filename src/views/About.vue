@@ -8,6 +8,7 @@
 <script>
 import ContactButton from '../components/ContactButton.vue';
 export default {
+	name: 'About',
 	components: {
 		ContactButton,
 	}

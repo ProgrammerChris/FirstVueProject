@@ -2,7 +2,7 @@
     <button><span>Få et pristilbud</span></button>
 </template>
 
-<style>
+<style scoped>
 #contact-me {
 	height: 50px;
 	width: 150px;
