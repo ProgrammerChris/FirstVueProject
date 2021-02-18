@@ -1,11 +1,11 @@
 <template>
     <div id="footer-box">
         <div id="so-me">
-            <a target="_blank" href="https://www.instagram.com/teige_nes_bygg_as/">
-                <img alt="Instagram" src="../assets/instagram.svg" width="45" height="45">
+            <a class="so-me-logo" target="_blank" href="https://www.instagram.com/teige_nes_bygg_as/">
+                <img class="so-me-logo" alt="Instagram" src="../assets/instagram.svg">
             </a>
-            <a target="_blank" href="https://www.facebook.com/TeigeNesByggAs">
-                <img alt="Facebook" src="../assets/facebook.svg" width="45" height="45">
+            <a class="so-me-logo" target="_blank" href="https://www.facebook.com/TeigeNesByggAs">
+                <img class="so-me-logo" alt="Facebook" src="../assets/facebook.svg">
             </a>
         </div>
         <div id="contact-info">
@@ -31,6 +31,9 @@
     display: grid;
     grid-template-columns: 50% 50%;
     align-content: center;
+}
+.so-me-logo {
+    height: 45px;
 }
 #contact-info {
     display: grid;
@@ -71,5 +74,48 @@ a {
     text-align: start;
     align-self: start;
     padding-top: 5px;
+}
+/* Desktop and large tablet screens */
+@media only screen and (min-width: 950px) {
+    #footer-box {
+        grid-template-columns: 50% 50%;
+
+    }
+    #so-me {
+        width: 25%;
+        justify-self: center;
+    }
+    #contact-info {
+        width: 50%;
+        justify-self: center;
+    }
+}
+
+/* Mobile landscape mode */
+@media only screen and (max-width: 812px) and (max-height: 414px) {
+    #footer-box {
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 45px;
+    }
+    #so-me {
+        width: 50%;
+        justify-self: center;
+    }
+    .so-me-logo {
+        height: 30px;
+    }
+    #mail {
+        padding: 0;
+    }
+    #mail-link {
+        padding: 0;
+    }
+    #telephone {
+        padding: 0;
+    }
+    #telephone-link {
+        padding: 0;
+    }
+
 }
 </style>

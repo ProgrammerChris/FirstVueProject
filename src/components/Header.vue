@@ -47,6 +47,7 @@ export default {
   align-self: center;
   margin: 0;
   padding-top: 1em;
+  font-weight: normal;
 }
 #nav {
   grid-row: 2;
@@ -74,7 +75,8 @@ li {
   list-style: none;
   display: inline;
 }
-@media (min-width: 950px) {
+/* Desktop and large tablet screens */
+@media only screen and (min-width: 950px) {
   #header-box {
     grid-template-rows: 150px;
     grid-template-columns: 40% 60%;
@@ -106,39 +108,8 @@ li {
     border-bottom-style: solid;
   }
 }
-@media (min-width: 650px) and (max-width: 950px) {
-  #nav{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-@media (min-width: 736px) and (max-height: 414px) {
-  #header-box {
-    grid-template-rows: 40px 30px;
-  }
-  #logo-img {
-    height: 30px;
-    width: 30px;
-    align-self: center;
-  }
-  #logo-text {
-    font-size: 1em;
-    align-self: center;
-    padding-top: .5em;
-  }
-  #nav{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-  #nav a {
-    color: #C2BBB0;
-    font-size: .875em;
-    text-decoration: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
-}
-@media only screen and (max-width: 812px) and (max-height:414px) {
+/* Mobile landscape mode */
+@media only screen and (max-width: 812px) and (max-height: 414px) {
 #header-box {
     grid-template-rows: 50px;
     grid-template-columns: 40% 60%;
