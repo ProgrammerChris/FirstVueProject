@@ -1,6 +1,11 @@
 <template>
-    <h1>This is the projects page</h1>
+  <div id="instafeed"></div>
 </template>
+
+<script>
+
+</script>
+
 
 <style>
 /* Desktop and large tablet screens */
