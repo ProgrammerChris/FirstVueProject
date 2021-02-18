@@ -8,7 +8,7 @@
       <ul>
         <li><router-link to="/">Hjem</router-link></li>
         <li><router-link to="/omoss">Om oss</router-link></li>
-        <li><router-link to="/prosjekter">Prosjekter</router-link></li>
+        <li><router-link to="/galleri">Galleri</router-link></li>
         <li><router-link to="/kontakt">Kontakt</router-link></li>
       </ul>
     </nav>

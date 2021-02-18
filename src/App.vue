@@ -39,7 +39,6 @@ body {
 }
 .content {
 	display: grid;
-	grid-template-rows: 130px auto auto 90px;
 	justify-content: center;
 }
 </style>
