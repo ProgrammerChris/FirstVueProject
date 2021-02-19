@@ -20,6 +20,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir"),
+   url(./assets/font/AvenirLTStd-Book.otf) format("truetype");
+}
 html {
   background: url('./assets/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -28,10 +33,10 @@ html {
   background-size: cover;
 }
 body {
-  margin: 0;
+  margin: 0 0 120px 0;
 }
 #app {
-  font-family: Actor, Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -39,6 +44,16 @@ body {
 }
 .content {
 	display: grid;
+  gap: 30px;
+  grid-template-rows: 130px auto 50px;
+  grid-template-columns: 100vw;
 	justify-content: center;
+}
+p {
+	text-align: left;
+	padding: 15px 20px;
+	font-size: 1.125em;
+	line-height: 1.4em;
+	margin: 0;
 }
 </style>

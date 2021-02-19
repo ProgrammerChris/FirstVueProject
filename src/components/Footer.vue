@@ -119,3 +119,10 @@ a {
 
 }
 </style>
+
+<style scoped>
+p {
+    font-size: 1em;
+    padding: 0;
+}
+</style>
