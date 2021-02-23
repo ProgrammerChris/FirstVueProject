@@ -26,7 +26,7 @@ export default {
    url(./assets/font/AvenirLTStd-Book.otf) format("truetype");
 }
 html {
-  background: url('./assets/background.jpg') no-repeat center center fixed;
+  background: #896D5C;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,8 +44,7 @@ body {
 }
 .content {
 	display: grid;
-  gap: 30px;
-  grid-template-rows: 130px auto 50px;
+  grid-template-rows: 120px auto;
   grid-template-columns: 100vw;
 	justify-content: center;
 }
@@ -55,5 +54,9 @@ p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	margin: 0;
+}
+.content-wrapper {
+	padding: 20px 0 10px 0;
+	justify-self: center;
 }
 </style>

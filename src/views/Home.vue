@@ -1,8 +1,10 @@
 <template>
 	<div id="main-content">
-		<div class="title-box"><h3>Hva kan vi hjelpe deg med?</h3></div>
-		<div class="text-box">
-			<p>Bygge nytt, rehabilitere eller pusse opp? Ingen jobb for stor, ingen jobb for liten. Ta gjerne kontakt for en hyggelig samtale så finner vi ut hva vi kan gjøre for deg!</p>
+		<div class="content-wrapper">
+			<div class="title-box"><h3>Hva kan vi hjelpe deg med?</h3></div>
+			<div class="text-box">
+				<p>Bygge nytt, rehabilitere eller pusse opp? Ingen jobb for stor, ingen jobb for liten. Ta gjerne kontakt for en hyggelig samtale så finner vi ut hva vi kan gjøre for deg!</p>
+			</div>
 		</div>
 	</div>
 	<ContactButton id="contact-me"/>
@@ -23,8 +25,8 @@ h3 {
 	margin: 0;
 }
 #main-content {
+	display: grid;
 	grid-row: 2;
-	justify-self: center;
 }
 .title-box {
 	width: 260px;
@@ -35,7 +37,7 @@ h3 {
 }
 .text-box {
 	width: 260px;
-	height: fit-content;
+	height: max-content;
 	background-color: #243F50;
 	opacity: .85;
 }

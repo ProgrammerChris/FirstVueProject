@@ -9,13 +9,13 @@
             </a>
         </div>
         <div id="contact-info">
-            <p id="mail">E-post:</p><a id="mail-link" href = "mailto: abc@example.com">post@teigenes.no</a>
-            <p id="telephone">Tlf.:</p><a id="telephone-link" href = "tel: 999 99 999">999 99 999</a>
+            <p id="mail">E-post:&emsp;<a id="mail-link" href = "mailto: abc@example.com">post@teigenes.no</a></p>
+            <p id="telephone">Tlf.: &emsp;&emsp;<a id="telephone-link" href = "tel: 999 99 999">999 99 999</a></p>
         </div>
     </div>
 </template>
 
-<style>
+<style scoped>
 #footer-box {
     position: fixed;
     bottom: 0;
@@ -29,51 +29,26 @@
 #so-me {
     grid-column: 1;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     align-content: center;
 }
 .so-me-logo {
     height: 45px;
 }
-#contact-info {
-    display: grid;
-    grid-column: 2;
-    grid-template-columns: 35% 65%;
-    grid-template-rows: 50% 50%;
-    font-size: 1em;
-    color: #250A00;
-}
 a {
     text-decoration: none;
     color: #250A00;
 }
-#contact-info p {
-    float: left;
-    padding-left: 30px;
-    margin: 0;
-    text-align: start;
+p {
+    color: #250A00;
+    padding: 5px;
 }
-#mail {
-    align-self: end;
-    padding-bottom: 10px;
-}
-#telephone {
-    padding-top: 5px;
+#contact-info {
+    line-height: 90px;
+    margin: auto 0;
 }
 #mail-link {
-    grid-row: 1;
-    grid-column: 2;
-    text-align: start;
-    align-self: end;
-    padding-bottom: 10px;
     text-decoration: underline;
-}
-#telephone-link {
-    grid-row: 2;
-    grid-column: 2;
-    text-align: start;
-    align-self: start;
-    padding-top: 5px;
 }
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {

@@ -1,5 +1,5 @@
 <template>
-    <button v-on:click="$router.push('kontakt')"><span>Få et pristilbud</span></button>
+    <button @click="$router.push('kontakt')"><span>Få et pristilbud</span></button>
 </template>
 
 <style scoped>

@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'Header'
 };
 </script>
 
@@ -33,7 +33,6 @@ export default {
 }
 #logo-div {
   display: grid;
-  grid-template-rows: inherit;
   grid-row: 1;
 }
 #logo-img {
@@ -81,11 +80,11 @@ li {
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {
   #header-box {
-    grid-template-rows: 150px;
-    grid-template-columns: 40% 60%;
+    grid-template-rows: 120px;
+    grid-template-columns: 1fr 3fr 2fr 3fr;
   }
   #logo-div {
-    grid-column: 1;
+    grid-column: 2;
   }
   #logo-img {
     height: 100px;
@@ -99,7 +98,7 @@ li {
   }
   #nav {
     grid-row: 1;
-    grid-column: 2;
+    grid-column: 3;
     align-self: center;
     padding-top: 4em;
   }
