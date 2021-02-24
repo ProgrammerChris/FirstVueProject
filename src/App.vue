@@ -1,8 +1,8 @@
 <template>
+  <Header/>
   <section class="content">
     <router-view/>
   </section>
-  <Header/>
   <Footer/>
 </template>
 
@@ -33,9 +33,14 @@ html {
   background-size: cover;
 }
 body {
-  margin: 0 0 120px 0;
+  margin: 0;
 }
 #app {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  gap: 20px 10px;
+  height: 100%;
+  min-height: 100vh;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -43,10 +48,11 @@ body {
   color: #C2BBB0;
 }
 .content {
+  grid-row: 2;
+  grid-column: 2;
 	display: grid;
-  grid-template-rows: 120px auto;
-  grid-template-columns: 100vw;
-	justify-content: center;
+  gap: 20px;
+  grid-auto-rows: max-content;
 }
 p {
 	text-align: left;
@@ -54,9 +60,5 @@ p {
 	font-size: 1.125em;
 	line-height: 1.4em;
 	margin: 0;
-}
-.content-wrapper {
-	padding: 20px 0 10px 0;
-	justify-self: center;
 }
 </style>

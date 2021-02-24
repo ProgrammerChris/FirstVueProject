@@ -1,7 +1,7 @@
 <template>
   <div id="header-box">
     <div id="logo-div">
-      <router-link to="/" id="logo-img"><img src="../assets/logo.svg" alt="Logo"></router-link>
+      <router-link to="/" id="logo-img"><img src="@/assets/logo.svg" alt="Logo"></router-link>
       <h1 id="logo-text">Teige Nes Bygg AS</h1>
     </div>
     <nav id="nav">
@@ -23,13 +23,15 @@ export default {
 
 <style>
 #header-box {
-  position: fixed;
+  z-index: 1;
+  position: sticky;
   top: 0;
-  width: 100%;
+  grid-row: 1;
+  grid-column: 1 / span 3;
   display: grid;
+  height: 100px;
   background-color: #250A00;
-  grid-template-rows: 100px 30px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 #logo-div {
   display: grid;
@@ -79,72 +81,10 @@ li {
 }
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {
-  #header-box {
-    grid-template-rows: 120px;
-    grid-template-columns: 1fr 3fr 2fr 3fr;
-  }
-  #logo-div {
-    grid-column: 2;
-  }
-  #logo-img {
-    height: 100px;
-    width: 100px;
-    align-self: center;
-  }
-  #logo-text {
-    font-size: 2.3em;
-    align-self: center;
-    padding-top: 1em;
-  }
-  #nav {
-    grid-row: 1;
-    grid-column: 3;
-    align-self: center;
-    padding-top: 4em;
-  }
-  #nav a {
-    color: #C2BBB0;
-    font-size: 1.5em;
-    text-decoration: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
+  
 }
 /* Mobile landscape mode */
 @media only screen and (max-width: 812px) and (max-height: 414px) {
-#header-box {
-    grid-template-rows: 50px;
-    grid-template-columns: 40% 60%;
-  }
-  #logo-div {
-    grid-column: 1;
-  }
-  #logo-img {
-    height: 30px;
-    width: 30px;
-    align-self: center;
-  }
-  #logo-text {
-    font-size: .875em;
-    align-self: center;
-    padding-top: 1em;
-  }
-  #nav {
-    grid-row: 1;
-    grid-column: 2;
-    align-self: center;
-    padding-top: .5em;
-  }
-  #nav a {
-    color: #C2BBB0;
-    font-size: 1em;
-    text-decoration: none;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-  }
-  #nav{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
+
 }
 </style>

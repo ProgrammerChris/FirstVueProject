@@ -31,13 +31,11 @@ export default {
 
 <style scoped>
 .employee-wrapper {
-	padding: 10px 0;
-  margin: auto;
   background-color: transparent;
 }
 .employee-title-box {
 	grid-column: 1/span 2;
-	width: 260px;
+	width: inherit;
 	height: 40px;
 	background-color: #C2BBB0;
 	color: #250A00;
@@ -46,9 +44,10 @@ export default {
 }
 .employee-text-box {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	gap: 10px;
 	grid-column: 1/span 2;
-	width: 260px;
+	grid-template-columns: 40%;
+	width: inherit;
 	height: fit-content;
 	background-color: #243F50;
 	opacity: .85;
@@ -61,7 +60,6 @@ export default {
 }
 .employee-contact-info {
 	grid-column: 1/span 2;
-	padding: 20px 0;
 }
 .employee-contact-info p {
 	padding: 5px 20px;
@@ -71,14 +69,13 @@ a {
 	color: #C2BBB0;
 }
 img {
-  position: relative;
   grid-column: 1;
 	grid-row: 1;
-	left: -25px;
-	top: 25px;
-}
-img {
-  width: 120px;
+	width: 120px;
 	height: 120px;
+	padding-right: 20px;
+	align-self: end;
+	position: relative;
+	right: 25px;
 }
 </style>

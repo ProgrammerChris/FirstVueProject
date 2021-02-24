@@ -1,6 +1,5 @@
 <template>
-	<div id="main-content">
-		<div class="content-wrapper">
+		<div class="info-wrapper">
 			<div class="title-box"><h3>Om oss</h3></div>
 			<div class="text-box">
 				<p>Vi er et lite tørmerer firma fra XYZ, som tar oppdrag i XYZ regionen. For oss er XYZ viktig og vi streber etter å tilby kvalitetsarbeid der du som kunde føler deg trygg og tenker på oss ved neste prosjekt.</p>
@@ -12,7 +11,6 @@
 			:age=31
 			text="Flere års erfaring innen X Y Z, her kan det jo stå litt forskjellig."
 		/>
-	</div>
 	<ContactButton id="contact-me"/>
 </template>
 
@@ -43,7 +41,7 @@ export default {
 	margin-top: 30px;
 }
 .employee-info {
-	width: 260px;
+	width: inherit;
 	height: fit-content;
 }
 

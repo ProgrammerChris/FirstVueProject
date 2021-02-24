@@ -17,14 +17,14 @@
 
 <style scoped>
 #footer-box {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    grid-row: 3;
+    grid-column: 1 / span 3;
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: #C2BBB0;
-    grid-template-rows: 90px;
-    padding-left: 30px;
+    padding-left: 20px;
+    height: 80px;
+    align-self: end;
 }
 #so-me {
     grid-column: 1;
@@ -52,52 +52,9 @@ p {
 }
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {
-    #footer-box {
-        grid-template-columns: 50% 50%;
-
-    }
-    #so-me {
-        width: 25%;
-        justify-self: center;
-    }
-    #contact-info {
-        width: 50%;
-        justify-self: center;
-    }
 }
 
 /* Mobile landscape mode */
 @media only screen and (max-width: 812px) and (max-height: 414px) {
-    #footer-box {
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 45px;
-    }
-    #so-me {
-        width: 50%;
-        justify-self: center;
-    }
-    .so-me-logo {
-        height: 30px;
-    }
-    #mail {
-        padding: 0;
-    }
-    #mail-link {
-        padding: 0;
-    }
-    #telephone {
-        padding: 0;
-    }
-    #telephone-link {
-        padding: 0;
-    }
-
-}
-</style>
-
-<style scoped>
-p {
-    font-size: 1em;
-    padding: 0;
 }
 </style>
