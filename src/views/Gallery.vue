@@ -33,7 +33,7 @@ export default {
       var lastTime = this.lastFetch
       var now = new Date().getTime();
 
-      if (now - lastTime < 5000) { // If less than 5 minutes since last fetch, get from localStorage, else fetch.
+      if (now - lastTime < 5000*60) { // If less than 5 minutes since last fetch, get from localStorage, else fetch.
         this.posts = JSON.parse(localStorage.getItem("instaPosts"));
       } else {
         fetch('https://ig.instant-tokens.com/users/1fa1e484-8a56-44cf-aa6f-042211802e80/instagram/17841400905223262/token?userSecret=' + process.env.VUE_APP_INSTA_SECRET)
