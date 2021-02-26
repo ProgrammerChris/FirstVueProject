@@ -63,8 +63,8 @@ export default {
 
 <style>
 .insta-post {
-  height: 250px;
-  width: 250px;
+  height: 15rem;
+  width: 15rem;
 }
 
 #instafeed {

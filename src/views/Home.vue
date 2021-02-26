@@ -5,15 +5,15 @@
 			<p>Bygge nytt, rehabilitere eller pusse opp? Ingen jobb for stor, ingen jobb for liten. Ta gjerne kontakt for en hyggelig samtale så finner vi ut hva vi kan gjøre for deg!</p>
 		</div>
 	</div>
-	<ContactButton id="contact-me"/>
+	<Button id="contact-me"/>
 </template>
 
 <script>
-import ContactButton from '../components/ContactButton.vue';
+import Button from '../components/Button.vue';
 export default {
 	name: 'Home',
 	components: {
-		ContactButton,
+		Button,
 	}
 }
 </script>
@@ -23,20 +23,20 @@ h3 {
 	margin: 0;
 }
 .title-box {
-	width: inherit;
-	height: 40px;
+	padding: .5rem 0;
 	background-color: #C2BBB0;
 	color: #250A00;
-	line-height: 40px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 .text-box {
-	width: inherit;
-	height: max-content;
 	background-color: #243F50;
 	opacity: .85;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 #contact-me {
-	margin: 30px -20px 30px 30px;
+	margin: .5rem -1rem;
 	justify-self: right;
 }
 /* Desktop and large tablet screens */

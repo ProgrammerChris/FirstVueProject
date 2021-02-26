@@ -1,6 +1,6 @@
 <template>
-	<div class="employee-wrapper">
-		<div class="employee-title-box"><h3>{{ name }}, {{ age }}år</h3></div>
+	<div>
+		<div class="title-box"><h3>{{ name }}, {{ age }}år</h3></div>
 		<div class="employee-text-box">
 			<img :src="require(`@/assets/img/${imgSrc}`)" alt="img">
 			<p>{{ text }}</p>
@@ -30,21 +30,9 @@ export default {
 </script>
 
 <style scoped>
-.employee-wrapper {
-  background-color: transparent;
-}
-.employee-title-box {
-	grid-column: 1/span 2;
-	width: inherit;
-	height: 40px;
-	background-color: #C2BBB0;
-	color: #250A00;
-	line-height: 40px;
-	justify-self: center;
-}
 .employee-text-box {
 	display: grid;
-	gap: 10px;
+	gap: .5rem;
 	grid-column: 1/span 2;
 	grid-template-columns: 40%;
 	width: inherit;
@@ -53,16 +41,18 @@ export default {
 	opacity: .85;
 	justify-self: center;
 	font-size: 0.875em;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 }
 .employee-text-box p{
 	grid-column: 2;
-	padding: 25px 0;
+	padding: 1.5rem 0;
 }
 .employee-contact-info {
 	grid-column: 1/span 2;
 }
 .employee-contact-info p {
-	padding: 5px 20px;
+	padding: .3rem 1rem;
 }
 a {
 	text-decoration: none;
@@ -71,11 +61,10 @@ a {
 img {
   grid-column: 1;
 	grid-row: 1;
-	width: 120px;
-	height: 120px;
-	padding-right: 20px;
+	width: 7.5rem;
+	height: 7.5rem;
 	align-self: end;
 	position: relative;
-	right: 25px;
+	right: 1.2rem;
 }
 </style>

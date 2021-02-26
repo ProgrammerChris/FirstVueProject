@@ -4,12 +4,13 @@
 
 <style scoped>
 #contact-me {
-	height: 50px;
-	width: 150px;
+	height: 3.5rem;
+	width: 9rem;
 	background-color: #243F50;
 	color: #C2BBB0;
 	border: none;
-	font-size: 1.125em;
+    border-radius: 2px;
+	font-size: 1.125rem;
 	cursor: pointer;
   	outline: none;
 	padding: 0;
@@ -25,11 +26,11 @@
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: -1.5rem;
     transition: 0.5s;
 }
 #contact-me:hover span {
-    padding-right: 15px;
+    padding-right: 1rem;
 }
 
 #contact-me:hover span:after {

@@ -2,7 +2,7 @@
   <div id="header-box">
     <div id="logo-div">
       <router-link to="/" id="logo-img"><img src="@/assets/logo.svg" alt="Logo"></router-link>
-      <h1 id="logo-text">Teige Nes Bygg AS</h1>
+      <h1 id="logo-text">Liksom Bygg AS</h1>
     </div>
     <nav id="nav">
       <ul>
@@ -23,13 +23,13 @@ export default {
 
 <style>
 #header-box {
+  height: 6rem;
   z-index: 1;
   position: sticky;
   top: 0;
   grid-row: 1;
   grid-column: 1 / span 3;
   display: grid;
-  height: 100px;
   background-color: #250A00;
   opacity: 0.85;
 }
@@ -39,14 +39,14 @@ export default {
 }
 #logo-img {
   grid-column: 1;
-  height: 50px;
-  width: 50px;
+  height: 3em;
+  width: 3em;
   justify-self: end;
   align-self: center;
 }
 #logo-text {
   grid-column: 2;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   justify-self: start;
   align-self: center;
   margin: 0;

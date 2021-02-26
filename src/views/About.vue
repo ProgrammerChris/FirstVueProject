@@ -1,5 +1,5 @@
 <template>
-		<div class="info-wrapper">
+		<div>
 			<div class="title-box"><h3>Om oss</h3></div>
 			<div class="text-box">
 				<p>Vi er et lite tørmerer firma fra XYZ, som tar oppdrag i XYZ regionen. For oss er XYZ viktig og vi streber etter å tilby kvalitetsarbeid der du som kunde føler deg trygg og tenker på oss ved neste prosjekt.</p>
@@ -11,16 +11,16 @@
 			:age=31
 			text="Flere års erfaring innen X Y Z, her kan det jo stå litt forskjellig."
 		/>
-	<ContactButton id="contact-me"/>
+	<Button id="contact-me"/>
 </template>
 
 <script>
-import ContactButton from '@/components/ContactButton.vue';
+import Button from '@/components/Button.vue';
 import Employee from '@/components/Employee.vue';
 export default {
 	name: 'About',
 	components: {
-		ContactButton,
+		Button,
 		Employee
 	},
 	mounted () {

@@ -38,7 +38,7 @@ body {
 #app {
   display: grid;
   grid-template-columns: 10% auto 10%;
-  gap: 20px 10px;
+  gap: 1.5rem 1rem;
   height: 100%;
   min-height: 100vh;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -51,14 +51,14 @@ body {
   grid-row: 2;
   grid-column: 2;
 	display: grid;
-  gap: 20px;
+  gap: 1.5rem;
   grid-auto-rows: max-content;
 }
 p {
 	text-align: left;
-	padding: 15px 20px;
-	font-size: 1.125em;
-	line-height: 1.4em;
+	padding: .5rem .7rem;
+	font-size: 1.125rem;
+	line-height: 1.4rem;
 	margin: 0;
 }
 </style>

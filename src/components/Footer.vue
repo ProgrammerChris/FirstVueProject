@@ -22,8 +22,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     background-color: #C2BBB0;
-    padding-left: 20px;
-    height: 80px;
+    padding: 1rem 0 1rem 1.5rem;
     align-self: end;
 }
 #so-me {
@@ -33,7 +32,7 @@
     align-content: center;
 }
 .so-me-logo {
-    height: 45px;
+    height: 2.5rem;
 }
 a {
     text-decoration: none;
@@ -41,10 +40,9 @@ a {
 }
 p {
     color: #250A00;
-    padding: 5px;
+    padding: .3rem;
 }
 #contact-info {
-    line-height: 90px;
     margin: auto 0;
 }
 #mail-link {
