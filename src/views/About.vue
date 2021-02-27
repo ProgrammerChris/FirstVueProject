@@ -1,9 +1,9 @@
 <template>
-		<div>
+		<div class="wrapper">
 			<div class="title-box"><h3>Om oss</h3></div>
 			<div class="text-box">
 				<p>Vi er et lite tørmerer firma fra XYZ, som tar oppdrag i XYZ regionen. For oss er XYZ viktig og vi streber etter å tilby kvalitetsarbeid der du som kunde føler deg trygg og tenker på oss ved neste prosjekt.</p>
-			</div>
+			</div>	
 		</div>
 		<Employee 
 			imgSrc="image.jpg" 

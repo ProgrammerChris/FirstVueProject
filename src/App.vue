@@ -26,6 +26,7 @@ export default {
    url(./assets/font/AvenirLTStd-Book.otf) format("truetype");
 }
 html {
+  overflow-y: scroll;
   background: #896D5C;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -38,10 +39,10 @@ body {
 #app {
   display: grid;
   grid-template-columns: 10% auto 10%;
-  gap: 1.5rem 1rem;
+  gap: 1rem 1rem;
   height: 100%;
   min-height: 100vh;
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -52,7 +53,6 @@ body {
   grid-column: 2;
 	display: grid;
   gap: 1.5rem;
-  grid-auto-rows: max-content;
 }
 p {
 	text-align: left;
@@ -60,5 +60,26 @@ p {
 	font-size: 1.125rem;
 	line-height: 1.4rem;
 	margin: 0;
+}
+
+/* Desktop and large tablet screens */
+@media only screen and (min-width: 950px) {
+  #app {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8em auto 6em;
+  }
+  p {
+    text-align: left;
+    padding: .5rem .7rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin: 0;
+  }
+  .content {
+    gap: 0;
+  }
+}
+/* Mobile landscape mode */
+@media only screen and (max-width: 812px) and (max-height: 414px) {
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="wrapper">
 		<div class="title-box"><h3>{{ name }}, {{ age }}år</h3></div>
 		<div class="employee-text-box">
 			<img :src="require(`@/assets/img/${imgSrc}`)" alt="img">
@@ -32,17 +32,12 @@ export default {
 <style scoped>
 .employee-text-box {
 	display: grid;
-	gap: .5rem;
-	grid-column: 1/span 2;
-	grid-template-columns: 40%;
-	width: inherit;
-	height: fit-content;
 	background-color: #243F50;
 	opacity: .85;
-	justify-self: center;
 	font-size: 0.875em;
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
+	padding-right: .2em;
 }
 .employee-text-box p{
 	grid-column: 2;
@@ -67,4 +62,14 @@ img {
 	position: relative;
 	right: 1.2rem;
 }
+/* Desktop and large tablet screens */
+@media only screen and (min-width: 950px) {
+	img {
+		width: 10rem;
+		height: 10rem;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+}
 </style>
+

@@ -18,7 +18,7 @@
 			type="submit"><strong>Send</strong></button>
   </form>
 	<div v-else>
-		<div id="sent"><h3>Takk for din henvendelse. Vil vil ta kontakt så fort vi kan.</h3></div>
+		<div id="sent"><h3>Takk for din henvendelse. Vi vil ta kontakt så fort vi kan.</h3></div>
 	</div>
 </template>
 
@@ -89,7 +89,9 @@ export default {
     background-color: #243F50;
     height: 5rem;
     opacity: .85;
-    height: fit-content;
+    height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
     padding: 1rem .5rem;
 }
 .contact-info {
@@ -107,13 +109,14 @@ export default {
 	border-radius: 2px;
 }
 textarea {
-	resize: vertical;
+	resize: none;
 	font-family: inherit;
 	height: 8rem;
 	border-radius: 2px;
 }
 form {
   display: grid;
+	grid-auto-rows: max-content;
 }
 label {
 	text-align: start;
@@ -132,7 +135,6 @@ label {
   background-color: #6eb9f7;
   background-size: 100%;
   transition: background 0s;
-	
 }
 
 button {
@@ -152,6 +154,18 @@ button {
 
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {
+	.contact-info {
+		font-size: 1.3em;
+	}
+	textarea {
+		resize: vertical;
+		min-height: 10rem;
+		height: 20rem;
+		max-height: 20rem;
+	}
+	label {
+		font-size: 1.3em;
+	}
 }
 
 /* Mobile landscape mode */

@@ -1,5 +1,5 @@
 <template>
-	<div class="info-wrapper">
+	<div class="wrapper">
 		<div class="title-box"><h3>Hva kan vi hjelpe deg med?</h3></div>
 		<div class="text-box">
 			<p>Bygge nytt, rehabilitere eller pusse opp? Ingen jobb for stor, ingen jobb for liten. Ta gjerne kontakt for en hyggelig samtale så finner vi ut hva vi kan gjøre for deg!</p>
@@ -41,6 +41,16 @@ h3 {
 }
 /* Desktop and large tablet screens */
 @media only screen and (min-width: 950px) {
+	.wrapper {
+		margin: 2rem;
+	}
+	.title-box {
+		padding: .5rem;
+		font-size: 1.7em;
+	}
+	.text-box {
+		padding: 1rem;
+	}
 }
 /* Mobile landscape mode */
 @media only screen and (max-width: 812px) and (max-height: 414px) {
