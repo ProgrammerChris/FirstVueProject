@@ -10,7 +10,7 @@
     </div>
     <div id="contact-info">
       <p id="mail">
-        E-post:&emsp;<a id="mail-link" href="mailto: abc@example.com">post@teigenes.no</a>
+        E-post:&emsp;<a id="mail-link" href="mailto: abc@example.com">abc@example.com</a>
       </p>
       <p id="telephone">
         Tlf.: &emsp;&emsp;<a id="telephone-link" href="tel: 999 99 999">999 99 999</a>
